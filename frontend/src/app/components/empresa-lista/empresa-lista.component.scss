@@ -1,0 +1,54 @@
+.container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 600;
+  color: #343a40;
+}
+
+.table {
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  table-layout: fixed;
+  width: 100%;
+
+  thead th,
+  tbody td {
+    word-wrap: break-word;
+    white-space: normal;
+    vertical-align: top;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+  }
+
+  // Estilos por coluna
+  th:nth-child(1),
+  td:nth-child(1) {
+    // ID
+    width: 50px;
+    text-align: center;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 170px;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: auto;
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 102px;
+  }
+}

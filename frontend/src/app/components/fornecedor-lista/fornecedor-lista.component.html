@@ -1,0 +1,34 @@
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Fornecedores Cadastrados</h2>
+
+  <app-adicionar-fornecedor></app-adicionar-fornecedor>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tipo</th>
+          <th>Documento</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>CEP</th>
+          <th>RG</th>
+          <th>Data Nascimento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let fornecedor of fornecedores">
+          <td>{{ fornecedor.id }}</td>
+          <td>{{ fornecedor.tipo }}</td>
+          <td>{{ fornecedor.documento }}</td>
+          <td>{{ fornecedor.nome }}</td>
+          <td>{{ fornecedor.email }}</td>
+          <td>{{ fornecedor.cep }}</td>
+          <td>{{ fornecedor.rg }}</td>
+          <td>{{ fornecedor.dataNascimento }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
